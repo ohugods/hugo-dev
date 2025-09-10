@@ -126,6 +126,41 @@ http://localhost:5173
 - `npm run build` - Gera build de produção
 - `npm run preview` - Visualiza o build de produção
 - `npm run lint` - Executa o linter
+- `npm run deploy` - Build + commit + push para GitHub Pages
+
+## 🚀 Deploy no GitHub Pages
+
+### Passos para Deploy:
+
+1. **Crie um repositório público no GitHub** com o nome `hugo-portfolio`
+
+2. **Configure o remote do Git**:
+   ```bash
+   git remote add origin https://github.com/Huguitosss/hugo-portfolio.git
+   ```
+
+3. **Faça o primeiro push**:
+   ```bash
+   git branch -M main
+   git push -u origin main
+   ```
+
+4. **Configure GitHub Pages**:
+   - Vá em Settings > Pages no seu repositório
+   - Selecione "Deploy from a branch"
+   - Escolha a branch `main` e pasta `/ (root)`
+   - Clique em Save
+
+5. **Para atualizações futuras**:
+   ```bash
+   npm run deploy
+   ```
+
+### URL do Site
+Após a configuração, seu site estará disponível em:
+```
+https://huguitosss.github.io/hugo-portfolio/
+```
 
 ## 📁 Estrutura do Projeto
 
