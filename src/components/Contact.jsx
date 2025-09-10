@@ -134,8 +134,8 @@ Enviado através do formulário do portfolio
     {
       icon: FaGithub,
       title: 'GitHub',
-      value: 'Huguitossss',
-      link: 'https://github.com/Huguitossss'
+      value: 'ohugods',
+      link: 'https://github.com/ohugods'
     }
   ]
 
