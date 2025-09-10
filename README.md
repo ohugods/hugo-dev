@@ -1,4 +1,4 @@
-# Hugo Dalmasio - Portfolio
+# Hugo Dalmasio - Developer
 
 Portfolio profissional de Hugo Dalmasio, Full Stack Developer com 4 anos de experiência em desenvolvimento de soluções digitais.
 
@@ -102,7 +102,7 @@ Este é um site de apresentação profissional desenvolvido com React e Tailwind
 1. Clone o repositório:
 ```bash
 git clone [url-do-repositorio]
-cd hugo-portfolio
+cd hugo-dev
 ```
 
 2. Instale as dependências:
@@ -132,11 +132,11 @@ http://localhost:5173
 
 ### Passos para Deploy:
 
-1. **Crie um repositório público no GitHub** com o nome `hugo-portfolio`
+1. **Crie um repositório público no GitHub** com o nome `hugo-dev`
 
 2. **Configure o remote do Git**:
    ```bash
-   git remote add origin https://github.com/Huguitosss/hugo-portfolio.git
+   git remote add origin https://github.com/ohugods/hugo-dev.git
    ```
 
 3. **Faça o primeiro push**:
@@ -159,13 +159,13 @@ http://localhost:5173
 ### URL do Site
 Após a configuração, seu site estará disponível em:
 ```
-https://huguitosss.github.io/hugo-portfolio/
+https://ohugods.github.io/hugo-dev/
 ```
 
 ## 📁 Estrutura do Projeto
 
 ```
-hugo-portfolio/
+hugo-dev/
 ├── src/
 │   ├── components/
 │   │   ├── About.jsx
@@ -214,7 +214,7 @@ hugo-portfolio/
 **Hugo Dalmasio**
 - Email: hugo.devbr@gmail.com
 - LinkedIn: [hugods](https://linkedin.com/in/hugods)
-- GitHub: [Huguitossss](https://github.com/Huguitossss)
+- GitHub: [ohugods](https://github.com/ohugods)
 
 ---
 
