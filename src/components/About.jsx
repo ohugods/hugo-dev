@@ -139,12 +139,7 @@ const About = () => {
         </div>
 
         {/* Services Grid */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-16"
-        >
+        <div className="mt-16">
           <h3 className="text-2xl font-bold text-black text-center mb-4">
             Serviços Oferecidos
           </h3>
@@ -154,12 +149,8 @@ const About = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
-              <motion.div
+              <div
                 key={service.title}
-                initial={{ opacity: 0, y: 30 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, delay: 0.8 + index * 0.1 }}
-                whileHover={{ scale: 1.05, y: -5 }}
                 className={`p-6 rounded-xl text-center group cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300 border ${
                   index % 2 === 0
                     ? 'bg-white border-gray-100 hover:border-black text-gray-800'
@@ -179,27 +170,20 @@ const About = () => {
                 }`}>
                   {service.description}
                 </p>
-              </motion.div>
+              </div>
             ))}
           </div>
 
           {/* CTA Button */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={inView ? { opacity: 1 } : {}}
-            transition={{ duration: 0.8, delay: 1.4 }}
-            className="text-center mt-12"
-          >
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+          <div className="text-center mt-12">
+            <button
               onClick={() => document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' })}
               className="bg-black text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Vamos Conversar
-            </motion.button>
-          </motion.div>
-        </motion.div>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
   )
