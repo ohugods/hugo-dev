@@ -183,7 +183,7 @@ const About = () => {
                         <span className="whitespace-nowrap inline-block">
                           <span className="hidden sm:inline">Desenvolvedor </span>Full-Stack
                         </span>
-                        <span className="block xs:inline-block xs:ml-2 sm:ml-4 mt-1 xs:mt-0 text-sm xs:text-base sm:text-xl md:text-2xl lg:text-3xl font-medium text-gray-600 whitespace-nowrap">
+                        <span className="block xs:inline-block xs:ml-2 sm:ml-4 mt-1 xs:mt-0 text-sm xs:text-base sm:text-xl md:text-3xl lg:text-4xl font-medium text-gray-600 whitespace-nowrap">
                           Transformando Ideias em Realidade
                         </span>
                       </h2>
