@@ -289,7 +289,7 @@ const Skills = () => {
             Competências Profissionais
           </h3>
 
-          <div className="grid grid-cols-2 sm:grid-cols-2 gap-2 sm:gap-3 md:gap-4 lg:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6">
             {skillCategories.slice(9).map((category, index) => (
               <motion.div
                 key={category.title}
@@ -299,9 +299,9 @@ const Skills = () => {
                 className="border-l-4 pl-4"
                 style={{ borderColor: category.color + '40' }}
               >
-                <h4 className="text-lg font-bold text-black mb-3 flex items-center">
+                <h4 className="text-base sm:text-lg font-bold text-black mb-2 sm:mb-3 flex items-center">
                   <category.icon
-                    className="w-5 h-5 mr-2"
+                    className="w-4 h-4 sm:w-5 sm:h-5 mr-2"
                     style={{ color: category.color }}
                   />
                   {category.title}
@@ -316,7 +316,7 @@ const Skills = () => {
                       transition={{ duration: 0.3, delay: 0.8 + index * 0.1 + skillIndex * 0.05 }}
                       className="flex items-center justify-between py-1"
                     >
-                      <span className="text-sm font-medium text-gray-700">
+                      <span className="text-xs sm:text-sm font-medium text-gray-700">
                         {skill.name}
                       </span>
                       <span className="text-xs text-gray-500 font-mono bg-gray-100 px-2 py-1 rounded">
