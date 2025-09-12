@@ -179,9 +179,9 @@ const About = () => {
                   <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 lg:mb-16">
                   {/* Text Content */}
                     <div className="order-2 lg:order-1">
-                      <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-3 sm:mb-4 md:mb-6 leading-tight">
+                      <h2 className="text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-3 sm:mb-4 md:mb-6 leading-tight">
                         <span className="whitespace-nowrap inline-block">Desenvolvedor Full-Stack</span>
-                        <span className="block xs:inline-block xs:ml-2 sm:ml-4 mt-1 xs:mt-0 text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-gray-600 whitespace-nowrap">
+                        <span className="block xs:inline-block xs:ml-2 sm:ml-4 mt-1 xs:mt-0 text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-gray-600 whitespace-nowrap">
                           Transformando Ideias em Realidade
                         </span>
                       </h2>
