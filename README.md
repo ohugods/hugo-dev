@@ -214,6 +214,7 @@ hugo-dev/
 **Hugo Dalmasio**
 - Email: hugo.devbr@gmail.com
 - LinkedIn: [hugods](https://linkedin.com/in/hugods)
+- github: ohugods
 - GitHub: [ohugods](https://github.com/ohugods)
 
 ---
