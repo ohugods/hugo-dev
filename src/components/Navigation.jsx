@@ -7,6 +7,7 @@ const Navigation = () => {
   const [currentText, setCurrentText] = useState('')
   const [isHovered, setIsHovered] = useState(false)
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [activeTab, setActiveTab] = useState('about')
 
   const fullText = 'Hugo Dalmasio'
   const shortText = 'HD'
@@ -62,7 +63,28 @@ const Navigation = () => {
     }
   }
 
-  const navItems = []
+  const navItems = [
+    { name: 'Sobre', tab: 'about' },
+    { name: 'Serviços', tab: 'services' },
+    { name: 'Habilidades', tab: 'skills' },
+    { name: 'Projetos', tab: 'projects' },
+    { name: 'Contato', tab: 'contact' }
+  ]
+
+  const handleTabClick = (tabId) => {
+    setActiveTab(tabId)
+    setIsMobileMenuOpen(false)
+    // Scroll para a seção about e ativar a aba específica
+    const element = document.querySelector('#about')
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+      setTimeout(() => {
+        if (window.activateTab) {
+          window.activateTab(tabId)
+        }
+      }, 300)
+    }
+  }
 
   const scrollToSection = (item) => {
     const element = document.querySelector(item.href)
@@ -198,23 +220,26 @@ const Navigation = () => {
             exit={{ opacity: 0, y: -20 }}
             className="md:hidden bg-white border-t border-gray-200"
           >
-            <div className="px-4 pt-3 pb-4 space-y-2">
+            <div className="px-4 pt-3 pb-4 space-y-1">
+              {/* Mobile Navigation Items */}
+              {navItems.map((item) => (
+                <button
+                  key={item.tab}
+                  onClick={() => handleTabClick(item.tab)}
+                  className={`block w-full text-left px-4 py-3 rounded-lg font-medium transition-colors duration-200 text-base ${
+                    activeTab === item.tab
+                      ? 'bg-black text-white'
+                      : 'text-gray-700 hover:text-black hover:bg-gray-50'
+                  }`}
+                >
+                  {item.name}
+                </button>
+              ))}
+              
               {/* Mobile CTA Button */}
               <div className="pt-2 border-t border-gray-200">
                 <button
-                  onClick={() => {
-                    const element = document.querySelector('#about')
-                    if (element) {
-                      element.scrollIntoView({ behavior: 'smooth' })
-                      // Ativar aba de contato após delay
-                      if (window.activateTab) {
-                        setTimeout(() => {
-                          window.activateTab('contact')
-                        }, 300)
-                      }
-                    }
-                    setIsMobileMenuOpen(false)
-                  }}
+                  onClick={() => handleTabClick('contact')}
                   className="block w-full bg-black text-white px-6 py-4 rounded-lg font-medium hover:bg-gray-800 transition-colors duration-200 text-lg"
                 >
                   Vamos Conversar

@@ -101,8 +101,8 @@ const About = () => {
   return (
     <section id="about" className="section-padding bg-gray-50">
       <div className="container-max">
-        {/* Tab Navigation */}
-        <div className="flex justify-center mb-8 overflow-x-auto px-4">
+        {/* Tab Navigation - Hidden on Mobile */}
+        <div className="hidden md:flex justify-center mb-8 overflow-x-auto px-4">
           <div className="bg-white rounded-full p-1 border border-gray-200 inline-flex min-w-max">
             <button
               onClick={() => toggleSection('about')}
@@ -179,13 +179,13 @@ const About = () => {
                   <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 lg:mb-16">
                   {/* Text Content */}
                     <div className="order-2 lg:order-1">
-                      <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4 sm:mb-6 leading-tight">
+                      <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-3 sm:mb-4 md:mb-6 leading-tight">
                         <span className="whitespace-nowrap inline-block">Desenvolvedor Full-Stack</span>
-                        <span className="block xs:inline-block xs:ml-4 mt-1 xs:mt-0 text-xl xs:text-2xl sm:text-3xl md:text-4xl font-medium text-gray-600 whitespace-nowrap">
+                        <span className="block xs:inline-block xs:ml-2 sm:ml-4 mt-1 xs:mt-0 text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-gray-600 whitespace-nowrap">
                           Transformando Ideias em Realidade
                         </span>
                       </h2>
-                      <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-6 sm:mb-8">
+                      <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed mb-4 sm:mb-6 md:mb-8">
                         Especialista em criar soluções tecnológicas que combinam
                         <span className="font-semibold text-black"> inovação</span>,
                         <span className="font-semibold text-black"> performance</span> e
@@ -536,13 +536,13 @@ const About = () => {
                         >
                           <span className="text-white font-bold text-sm">2021</span>
                         </motion.div>
-                        <div className="ml-8 flex-1 bg-gradient-to-r from-gray-50 to-white rounded-2xl shadow-lg p-6 border-l-4 border-gray-400 hover:shadow-xl transition-all duration-300">
-                          <div className="flex items-center justify-between mb-3">
-                            <h4 className="text-xl font-bold text-black">Primeiro Contato com Tecnologia</h4>
-                            <span className="px-3 py-1 bg-gray-400 text-white text-xs rounded-full font-medium">Início</span>
+                        <div className="ml-6 sm:ml-8 flex-1 bg-gradient-to-r from-gray-50 to-white rounded-2xl shadow-lg p-4 sm:p-6 border-l-4 border-gray-400 hover:shadow-xl transition-all duration-300">
+                          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 gap-2">
+                            <h4 className="text-lg sm:text-xl font-bold text-black">Primeiro Contato com Tecnologia</h4>
+                            <span className="px-3 py-1 bg-gray-400 text-white text-xs rounded-full font-medium self-start sm:self-auto">Início</span>
                           </div>
-                          <p className="text-gray-600 text-sm mb-3 font-medium">Curiosidade • Autodidatismo • Lógica de Programação</p>
-                          <p className="text-gray-700 leading-relaxed">
+                          <p className="text-gray-600 text-xs sm:text-sm mb-3 font-medium">Curiosidade • Autodidatismo • Lógica de Programação</p>
+                          <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
                             Minha jornada começou com a curiosidade sobre como as aplicações funcionam.
                             Explorei conceitos básicos de lógica de programação, algoritmos e resolução de problemas.
                             Foi o momento de descoberta que despertou minha paixão pela tecnologia e desenvolvimento.
@@ -563,13 +563,13 @@ const About = () => {
                         >
                           <span className="text-white font-bold text-sm">2022</span>
                         </motion.div>
-                        <div className="ml-8 flex-1 bg-gradient-to-r from-gray-50 to-white rounded-2xl shadow-lg p-6 border-l-4 border-gray-600 hover:shadow-xl transition-all duration-300">
-                          <div className="flex items-center justify-between mb-3">
-                            <h4 className="text-xl font-bold text-black">Fundamentos do Frontend</h4>
-                            <span className="px-3 py-1 bg-gray-600 text-white text-xs rounded-full font-medium">Frontend</span>
+                        <div className="ml-6 sm:ml-8 flex-1 bg-gradient-to-r from-gray-50 to-white rounded-2xl shadow-lg p-4 sm:p-6 border-l-4 border-gray-600 hover:shadow-xl transition-all duration-300">
+                          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 gap-2">
+                            <h4 className="text-lg sm:text-xl font-bold text-black">Fundamentos do Frontend</h4>
+                            <span className="px-3 py-1 bg-gray-600 text-white text-xs rounded-full font-medium self-start sm:self-auto">Frontend</span>
                           </div>
-                          <p className="text-gray-600 text-sm mb-3 font-medium">HTML • CSS • JavaScript Básico</p>
-                          <p className="text-gray-700 leading-relaxed">
+                          <p className="text-gray-600 text-xs sm:text-sm mb-3 font-medium">HTML • CSS • JavaScript Básico</p>
+                          <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
                             Iniciei minha jornada aprendendo os fundamentos do desenvolvimento web.
                             Desde estruturas básicas de HTML até manipulação do DOM com JavaScript puro,
                             estabeleci as bases sólidas para minha carreira em tecnologia.
@@ -590,10 +590,10 @@ const About = () => {
                         >
                           <span className="text-white font-bold text-sm">2023</span>
                         </motion.div>
-                        <div className="ml-8 flex-1 bg-gradient-to-r from-gray-50 to-white rounded-2xl shadow-lg p-6 border-l-4 border-gray-500 hover:shadow-xl transition-all duration-300">
-                          <h4 className="text-xl font-bold text-black mb-3">Frontend Avançado & Frameworks</h4>
-                          <p className="text-gray-600 text-sm mb-3 font-medium">React • TypeScript • Tailwind CSS</p>
-                          <p className="text-gray-700 leading-relaxed">
+                        <div className="ml-6 sm:ml-8 flex-1 bg-gradient-to-r from-gray-50 to-white rounded-2xl shadow-lg p-4 sm:p-6 border-l-4 border-gray-500 hover:shadow-xl transition-all duration-300">
+                          <h4 className="text-lg sm:text-xl font-bold text-black mb-3">Frontend Avançado & Frameworks</h4>
+                          <p className="text-gray-600 text-xs sm:text-sm mb-3 font-medium">React • TypeScript • Tailwind CSS</p>
+                          <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
                             Evoluí minhas habilidades aprendendo frameworks modernos e ferramentas avançadas.
                             Dominei React para criar interfaces interativas, TypeScript para código mais robusto,
                             e Tailwind CSS para desenvolvimento rápido e consistente de UI.
@@ -614,13 +614,13 @@ const About = () => {
                         >
                           <span className="text-white font-bold text-sm">2024</span>
                         </motion.div>
-                        <div className="ml-8 flex-1 bg-gradient-to-r from-gray-50 to-white rounded-2xl shadow-lg p-6 border-l-4 border-gray-700 hover:shadow-xl transition-all duration-300">
-                          <div className="flex items-center justify-between mb-3">
-                            <h4 className="text-xl font-bold text-black">Desenvolvimento Backend & APIs</h4>
-                            <span className="px-3 py-1 bg-gray-700 text-white text-xs rounded-full font-medium">Backend</span>
+                        <div className="ml-6 sm:ml-8 flex-1 bg-gradient-to-r from-gray-50 to-white rounded-2xl shadow-lg p-4 sm:p-6 border-l-4 border-gray-700 hover:shadow-xl transition-all duration-300">
+                          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 gap-2">
+                            <h4 className="text-lg sm:text-xl font-bold text-black">Desenvolvimento Backend & APIs</h4>
+                            <span className="px-3 py-1 bg-gray-700 text-white text-xs rounded-full font-medium self-start sm:self-auto">Backend</span>
                           </div>
-                          <p className="text-gray-600 text-sm mb-3 font-medium">Node.js • Express • PostgreSQL • REST APIs</p>
-                          <p className="text-gray-700 leading-relaxed">
+                          <p className="text-gray-600 text-xs sm:text-sm mb-3 font-medium">Node.js • Express • PostgreSQL • REST APIs</p>
+                          <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
                             Expandí minhas habilidades para o lado servidor, aprendendo Node.js, Express e bancos de dados.
                             Desenvolvi APIs REST robustas, implementei autenticação e segurança,
                             e integrei sistemas complexos com diferentes tecnologias.
@@ -641,13 +641,13 @@ const About = () => {
                         >
                           <span className="text-white font-bold text-sm">2025</span>
                         </motion.div>
-                        <div className="ml-8 flex-1 bg-gradient-to-r from-gray-50 to-white rounded-2xl shadow-lg p-6 border-l-4 border-gray-800 hover:shadow-xl transition-all duration-300">
-                          <div className="flex items-center justify-between mb-3">
-                            <h4 className="text-xl font-bold text-black">Full Stack Mastery & Projetos Complexos</h4>
-                            <span className="px-3 py-1 bg-gray-800 text-white text-xs rounded-full font-medium">Full Stack</span>
+                        <div className="ml-6 sm:ml-8 flex-1 bg-gradient-to-r from-gray-50 to-white rounded-2xl shadow-lg p-4 sm:p-6 border-l-4 border-gray-800 hover:shadow-xl transition-all duration-300">
+                          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 gap-2">
+                            <h4 className="text-lg sm:text-xl font-bold text-black">Full Stack Mastery & Projetos Complexos</h4>
+                            <span className="px-3 py-1 bg-gray-800 text-white text-xs rounded-full font-medium self-start sm:self-auto">Full Stack</span>
                           </div>
-                          <p className="text-gray-600 text-sm mb-3 font-medium">Projetos Completos • DevOps • Arquitetura</p>
-                          <p className="text-gray-700 leading-relaxed">
+                          <p className="text-gray-600 text-xs sm:text-sm mb-3 font-medium">Projetos Completos • DevOps • Arquitetura</p>
+                          <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
                             Solidifiquei minhas habilidades como desenvolvedor full stack, integrando frontend e backend
                             em projetos complexos e escaláveis. Implementei DevOps, arquitetura de microsserviços,
                             e trabalhei em projetos de blockchain e aplicações mobile de ponta a ponta.
@@ -668,13 +668,13 @@ const About = () => {
                         >
                           <span className="text-white font-bold text-sm">2026</span>
                         </motion.div>
-                        <div className="ml-8 flex-1 bg-gradient-to-r from-gray-50 to-white rounded-2xl shadow-lg p-6 border-l-4 border-gray-900 hover:shadow-xl transition-all duration-300">
-                          <div className="flex items-center justify-between mb-3">
-                            <h4 className="text-xl font-bold text-black">Tecnologias Emergentes & Inovação</h4>
-                            <span className="px-3 py-1 bg-black text-white text-xs rounded-full font-medium">Futuro</span>
+                        <div className="ml-6 sm:ml-8 flex-1 bg-gradient-to-r from-gray-50 to-white rounded-2xl shadow-lg p-4 sm:p-6 border-l-4 border-gray-900 hover:shadow-xl transition-all duration-300">
+                          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 gap-2">
+                            <h4 className="text-lg sm:text-xl font-bold text-black">Tecnologias Emergentes & Inovação</h4>
+                            <span className="px-3 py-1 bg-black text-white text-xs rounded-full font-medium self-start sm:self-auto">Futuro</span>
                           </div>
-                          <p className="text-gray-600 text-sm mb-3 font-medium">IA • Web3 • Edge Computing • Metaverso</p>
-                          <p className="text-gray-700 leading-relaxed">
+                          <p className="text-gray-600 text-xs sm:text-sm mb-3 font-medium">IA • Web3 • Edge Computing • Metaverso</p>
+                          <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
                             Explorando as fronteiras da tecnologia, mergulhando em inteligência artificial,
                             desenvolvimento Web3 avançado, computação de borda e experiências imersivas.
                             Criando soluções inovadoras que antecipam as necessidades do futuro digital.
