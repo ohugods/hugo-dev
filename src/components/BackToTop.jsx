@@ -36,10 +36,10 @@ const BackToTop = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={openWhatsApp}
-          className="fixed bottom-8 right-8 z-[9999] w-16 h-16 bg-green-500 text-white rounded-full shadow-2xl hover:bg-green-600 transition-all duration-300 flex items-center justify-center border-2 border-white hover:border-green-200"
+          className="fixed bottom-8 right-8 z-[9999] w-16 h-16 sm:w-18 sm:h-18 bg-green-500 text-white rounded-full shadow-2xl hover:bg-green-600 transition-all duration-300 flex items-center justify-center border-2 border-white hover:border-green-200"
           aria-label="Conversar no WhatsApp"
         >
-          <FaWhatsapp className="w-10 h-10" />
+          <FaWhatsapp className="w-10 h-10 sm:w-12 sm:h-12" />
         </motion.button>
       )}
     </AnimatePresence>
