@@ -102,11 +102,11 @@ const About = () => {
     <section id="about" className="section-padding bg-gray-50">
       <div className="container-max">
         {/* Tab Navigation */}
-        <div className="flex justify-center mb-8 overflow-hidden">
-          <div className="bg-white rounded-full p-1 border border-gray-200 inline-flex min-w-max overflow-hidden">
+        <div className="flex justify-center mb-8 overflow-x-auto px-4">
+          <div className="bg-white rounded-full p-1 border border-gray-200 inline-flex min-w-max">
             <button
               onClick={() => toggleSection('about')}
-              className={`px-4 py-2 rounded-full font-medium transition-all duration-300 whitespace-nowrap ${
+              className={`px-3 py-2 rounded-full font-medium transition-all duration-300 whitespace-nowrap text-sm sm:px-4 sm:text-base ${
                 activeSection === 'about'
                   ? 'bg-black text-white'
                   : 'text-gray-600 hover:text-black hover:bg-gray-50'
@@ -116,7 +116,7 @@ const About = () => {
             </button>
             <button
               onClick={() => toggleSection('services')}
-              className={`px-4 py-2 rounded-full font-medium transition-all duration-300 whitespace-nowrap ${
+              className={`px-3 py-2 rounded-full font-medium transition-all duration-300 whitespace-nowrap text-sm sm:px-4 sm:text-base ${
                 activeSection === 'services'
                   ? 'bg-black text-white'
                   : 'text-gray-600 hover:text-black hover:bg-gray-50'
@@ -126,7 +126,7 @@ const About = () => {
             </button>
             <button
               onClick={() => toggleSection('skills')}
-              className={`px-4 py-2 rounded-full font-medium transition-all duration-300 whitespace-nowrap ${
+              className={`px-3 py-2 rounded-full font-medium transition-all duration-300 whitespace-nowrap text-sm sm:px-4 sm:text-base ${
                 activeSection === 'skills'
                   ? 'bg-black text-white'
                   : 'text-gray-600 hover:text-black hover:bg-gray-50'
@@ -136,7 +136,7 @@ const About = () => {
             </button>
             <button
               onClick={() => toggleSection('projects')}
-              className={`px-4 py-2 rounded-full font-medium transition-all duration-300 whitespace-nowrap ${
+              className={`px-3 py-2 rounded-full font-medium transition-all duration-300 whitespace-nowrap text-sm sm:px-4 sm:text-base ${
                 activeSection === 'projects'
                   ? 'bg-black text-white'
                   : 'text-gray-600 hover:text-black hover:bg-gray-50'
@@ -146,7 +146,7 @@ const About = () => {
             </button>
             <button
               onClick={() => toggleSection('contact')}
-              className={`px-4 py-2 rounded-full font-medium transition-all duration-300 whitespace-nowrap ${
+              className={`px-3 py-2 rounded-full font-medium transition-all duration-300 whitespace-nowrap text-sm sm:px-4 sm:text-base ${
                 activeSection === 'contact'
                   ? 'bg-black text-white'
                   : 'text-gray-600 hover:text-black hover:bg-gray-50'
@@ -185,7 +185,7 @@ const About = () => {
                           Transformando Ideias em Realidade
                         </span>
                       </h2>
-                      <p className="text-xl text-gray-600 leading-relaxed mb-8">
+                      <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-6 sm:mb-8">
                         Especialista em criar soluções tecnológicas que combinam
                         <span className="font-semibold text-black"> inovação</span>,
                         <span className="font-semibold text-black"> performance</span> e
@@ -193,33 +193,33 @@ const About = () => {
                       </p>
 
                       {/* Quick Info Cards */}
-                      <div className="flex flex-wrap gap-4">
+                      <div className="flex flex-wrap gap-3 sm:gap-4">
                         <motion.div
                           initial={{ opacity: 0, x: -20 }}
                           animate={{ opacity: 1, x: 0 }}
                           transition={{ duration: 0.6, delay: 0.4 }}
-                          className="flex items-center bg-white px-4 py-2 rounded-full shadow-md border border-gray-100"
+                          className="flex items-center bg-white px-3 py-2 rounded-full shadow-md border border-gray-100 text-xs sm:text-sm"
                         >
-                          <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center mr-3">
-                            <svg className="w-4 h-4 text-black" fill="currentColor" viewBox="0 0 20 20">
+                          <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gray-100 rounded-full flex items-center justify-center mr-2 sm:mr-3">
+                            <svg className="w-3 h-3 sm:w-4 sm:h-4 text-black" fill="currentColor" viewBox="0 0 20 20">
                               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                             </svg>
                           </div>
-                          <span className="text-sm font-medium text-gray-700">Disponível para projetos</span>
+                          <span className="font-medium text-gray-700">Disponível para projetos</span>
                         </motion.div>
 
                         <motion.div
                           initial={{ opacity: 0, x: -20 }}
                           animate={{ opacity: 1, x: 0 }}
                           transition={{ duration: 0.6, delay: 0.5 }}
-                          className="flex items-center bg-white px-4 py-2 rounded-full shadow-md border border-gray-100"
+                          className="flex items-center bg-white px-3 py-2 rounded-full shadow-md border border-gray-100 text-xs sm:text-sm"
                         >
-                          <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center mr-3">
-                            <svg className="w-4 h-4 text-black" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                </svg>
-              </div>
-                          <span className="text-sm font-medium text-gray-700">Espírito Santo, BR</span>
+                          <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gray-100 rounded-full flex items-center justify-center mr-2 sm:mr-3">
+                            <svg className="w-3 h-3 sm:w-4 sm:h-4 text-black" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                            </svg>
+                          </div>
+                          <span className="font-medium text-gray-700">Espírito Santo, BR</span>
                         </motion.div>
               </div>
             </div>
@@ -349,7 +349,7 @@ const About = () => {
                   </div>
 
                   {/* Interactive Stats Cards */}
-                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12 sm:mb-16">
             {stats.map((stat, index) => (
               <motion.div
                 key={stat.label}
@@ -365,7 +365,7 @@ const About = () => {
                           scale: 1.05,
                           boxShadow: "0 20px 40px rgba(0,0,0,0.1)"
                         }}
-                        className="group relative bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden"
+                        className="group relative bg-white p-4 sm:p-6 lg:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden"
                       >
                         <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-full -mr-10 -mt-10 group-hover:scale-150 transition-transform duration-500"></div>
                         <div className="relative z-10 text-center">
@@ -373,11 +373,11 @@ const About = () => {
                             initial={{ scale: 0 }}
                             animate={{ scale: 1 }}
                             transition={{ duration: 0.5, delay: index * 0.1 + 0.5 }}
-                            className="text-4xl font-bold text-black mb-3 group-hover:text-blue-600 transition-colors duration-300"
+                            className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black mb-2 sm:mb-3 group-hover:text-blue-600 transition-colors duration-300"
                           >
                   {stat.number}
                           </motion.div>
-                          <div className="text-gray-600 text-sm font-medium uppercase tracking-wide">
+                          <div className="text-gray-600 text-xs sm:text-sm font-medium uppercase tracking-wide">
                   {stat.label}
                           </div>
                 </div>
@@ -391,16 +391,16 @@ const About = () => {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
-                  className="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 md:p-12 shadow-lg"
+                  className="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-6 sm:p-8 md:p-12 shadow-lg"
                 >
-                  <div className="text-center mb-12">
-                    <h3 className="text-3xl font-bold text-black mb-4">Minha Abordagem</h3>
-                    <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+                  <div className="text-center mb-8 sm:mb-12">
+                    <h3 className="text-2xl sm:text-3xl font-bold text-black mb-3 sm:mb-4">Minha Abordagem</h3>
+                    <p className="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">
                       Cada projeto é uma oportunidade de criar algo extraordinário
                     </p>
                 </div>
 
-                  <div className="grid md:grid-cols-3 gap-8">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                     {/* Value 1 */}
                     <motion.div
                       initial={{ opacity: 0, x: -30 }}
@@ -408,11 +408,11 @@ const About = () => {
                       transition={{ duration: 0.6, delay: 0.5 }}
                       className="text-center group"
                     >
-                      <div className="w-20 h-20 bg-gradient-to-br from-gray-200 to-gray-400 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                        <FaUser className="text-2xl text-black" />
+                      <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-gray-200 to-gray-400 rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        <FaUser className="text-xl sm:text-2xl text-black" />
                       </div>
-                      <h4 className="text-xl font-bold text-black mb-3">Foco no Usuário</h4>
-                      <p className="text-gray-600 leading-relaxed">
+                      <h4 className="text-lg sm:text-xl font-bold text-black mb-2 sm:mb-3">Foco no Usuário</h4>
+                      <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
                         Interfaces intuitivas e experiências que encantam. Cada decisão de design é guiada pela perspectiva do usuário final.
                       </p>
                     </motion.div>
@@ -424,11 +424,11 @@ const About = () => {
                       transition={{ duration: 0.6, delay: 0.6 }}
                       className="text-center group"
                     >
-                      <div className="w-20 h-20 bg-gradient-to-br from-gray-300 to-gray-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                        <FaTachometerAlt className="text-2xl text-black" />
+                      <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-gray-300 to-gray-500 rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        <FaTachometerAlt className="text-xl sm:text-2xl text-black" />
                       </div>
-                      <h4 className="text-xl font-bold text-black mb-3">Performance</h4>
-                      <p className="text-gray-600 leading-relaxed">
+                      <h4 className="text-lg sm:text-xl font-bold text-black mb-2 sm:mb-3">Performance</h4>
+                      <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
                         Código otimizado e arquiteturas escaláveis. Performance não é opcional, é essencial para uma boa experiência.
                       </p>
                     </motion.div>
@@ -440,11 +440,11 @@ const About = () => {
                       transition={{ duration: 0.6, delay: 0.7 }}
                       className="text-center group"
                     >
-                      <div className="w-20 h-20 bg-gradient-to-br from-gray-400 to-gray-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                        <FaCogs className="text-2xl text-black" />
+                      <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-gray-400 to-gray-600 rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        <FaCogs className="text-xl sm:text-2xl text-black" />
                       </div>
-                      <h4 className="text-xl font-bold text-black mb-3">Inovação Contínua</h4>
-                      <p className="text-gray-600 leading-relaxed">
+                      <h4 className="text-lg sm:text-xl font-bold text-black mb-2 sm:mb-3">Inovação Contínua</h4>
+                      <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
                         Sempre aprendendo e evoluindo. A tecnologia avança rápido, e eu também. Cada projeto é uma oportunidade de crescimento.
                       </p>
                     </motion.div>
