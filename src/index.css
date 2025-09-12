@@ -11,6 +11,110 @@
     font-family: 'Inter', sans-serif;
     background-color: #ffffff;
     color: #000000;
+    overflow-x: hidden; /* Previne scroll horizontal */
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    max-width: 100vw;
+  }
+
+  html {
+    overflow-x: hidden;
+    width: 100vw;
+    max-width: 100vw;
+  }
+
+  /* Previne overflow horizontal em todos os elementos */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Garante que imagens e elementos não causem overflow */
+  img, video, canvas, svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Previne overflow horizontal em elementos específicos */
+  .container-max,
+  .section-padding,
+  section,
+  div,
+  nav,
+  main,
+  article {
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+
+  /* Garante que elementos absolutos não causem overflow */
+  [class*="absolute"] {
+    max-width: 100vw;
+  }
+
+  /* Previne overflow em grids e flexbox */
+  .grid,
+  .flex,
+  .inline-flex {
+    min-width: 0;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+
+  /* Garante que elementos de navegação não causem overflow */
+  nav,
+  .fixed,
+  .absolute {
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+
+  /* Previne overflow em elementos de texto */
+  .whitespace-nowrap {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Garante que elementos com transform não causem overflow */
+  .transform {
+    max-width: 100vw;
+  }
+
+  /* Previne overflow em elementos de projeto e cards */
+  .card-hover,
+  .shadow-lg,
+  .rounded-lg {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  /* Garante que grids não causem overflow */
+  .grid-cols-2,
+  .lg\\:grid-cols-2 {
+    max-width: 100%;
+  }
+
+  /* Melhora responsividade de containers */
+  .container-max {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .container-max {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container-max {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
   }
 }
 

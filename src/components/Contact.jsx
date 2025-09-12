@@ -140,7 +140,7 @@ Enviado através do formulário do portfolio
   ]
 
   return (
-    <section id="contact" className="section-padding bg-white">
+    <section id="contact" className="section-padding bg-gray-50">
       <div className="container-max">
         <motion.div
           ref={ref}
@@ -397,19 +397,6 @@ Enviado através do formulário do portfolio
         </div>
 
         {/* Footer */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="text-center mt-16 pt-8 border-t border-gray-200"
-        >
-          <p className="text-gray-600">
-            © 2025 Hugo Dalmasio. Todos os direitos reservados.
-          </p>
-          <p className="text-gray-500 text-sm mt-2">
-            Hugo Dalmasio - Full Stack Developer
-          </p>
-        </motion.div>
       </div>
     </section>
   )
