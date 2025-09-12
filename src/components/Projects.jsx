@@ -378,7 +378,7 @@ const Projects = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-2 sm:gap-3 md:gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-2 sm:gap-3 md:gap-4">
             {additionalProjects.map((project, index) => (
               <motion.div
                 key={project.title}
@@ -392,30 +392,30 @@ const Projects = () => {
                 }}
                 className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer"
               >
-                <div className="p-4">
-                  <div className="flex items-center justify-center mb-3">
+                <div className="p-2 sm:p-3 md:p-4">
+                  <div className="flex items-center justify-center mb-2 sm:mb-3">
                     <div
-                      className="w-12 h-12 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                      className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
                       style={{ backgroundColor: project.color + '20' }}
                     >
                       <project.icon
-                        className="w-6 h-6"
+                        className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6"
                         style={{ color: project.color }}
                       />
                     </div>
                   </div>
 
                   <div className="text-center">
-                    <h4 className="text-sm font-bold text-black mb-1 group-hover:text-gray-700 transition-colors">
+                    <h4 className="text-xs sm:text-sm font-bold text-black mb-1 group-hover:text-gray-700 transition-colors">
                       {project.title}
                     </h4>
-                    <p className="text-xs text-gray-500 mb-2">
+                    <p className="text-xs text-gray-500 mb-2 hidden sm:block">
                       {project.subtitle}
                     </p>
                     <span className="inline-block bg-gray-100 text-gray-600 px-2 py-1 rounded-full text-xs font-medium mb-2">
                       {project.category}
                     </span>
-                    <p className="text-xs text-gray-600 leading-tight mb-3 line-clamp-2">
+                    <p className="text-xs text-gray-600 leading-tight mb-3 line-clamp-2 hidden sm:block">
                       {project.description}
                     </p>
                     <div className="flex flex-wrap gap-1 justify-center">

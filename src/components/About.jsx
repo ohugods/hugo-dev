@@ -349,7 +349,7 @@ const About = () => {
                   </div>
 
                   {/* Interactive Stats Cards */}
-                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12 sm:mb-16">
+                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 lg:gap-6 mb-8 sm:mb-12 lg:mb-16">
             {stats.map((stat, index) => (
               <motion.div
                 key={stat.label}
@@ -365,7 +365,7 @@ const About = () => {
                           scale: 1.05,
                           boxShadow: "0 20px 40px rgba(0,0,0,0.1)"
                         }}
-                        className="group relative bg-white p-4 sm:p-6 lg:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden"
+                        className="group relative bg-white p-3 sm:p-4 md:p-6 lg:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden"
                       >
                         <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-full -mr-10 -mt-10 group-hover:scale-150 transition-transform duration-500"></div>
                         <div className="relative z-10 text-center">
@@ -373,7 +373,7 @@ const About = () => {
                             initial={{ scale: 0 }}
                             animate={{ scale: 1 }}
                             transition={{ duration: 0.5, delay: index * 0.1 + 0.5 }}
-                            className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black mb-2 sm:mb-3 group-hover:text-blue-600 transition-colors duration-300"
+                            className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-1 sm:mb-2 md:mb-3 group-hover:text-blue-600 transition-colors duration-300"
                           >
                   {stat.number}
                           </motion.div>

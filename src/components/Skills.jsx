@@ -224,51 +224,51 @@ const Skills = () => {
         </motion.div>
 
         {/* Original Technical Skills Cards */}
-        <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 mb-6 sm:mb-8 md:mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2 sm:gap-3 md:gap-4 lg:gap-6 mb-6 sm:mb-8 md:mb-12">
           {skillCategories.slice(0, 9).map((category, index) => (
             <motion.div
               key={category.title}
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-white p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300"
+              className="bg-white p-3 sm:p-4 md:p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300"
             >
-              <div className="flex items-center mb-6">
+              <div className="flex items-center mb-3 sm:mb-4 md:mb-6">
                 <div
-                  className="w-12 h-12 rounded-lg flex items-center justify-center mr-4"
+                  className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mr-2 sm:mr-3 md:mr-4"
                   style={{ backgroundColor: category.color + '20' }}
                 >
                   <category.icon
-                    className="w-6 h-6"
+                    className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6"
                     style={{ color: category.color }}
                   />
                 </div>
-                <h3 className="text-xl font-bold text-black">
+                <h3 className="text-sm sm:text-base md:text-xl font-bold text-black">
                   {category.title}
                 </h3>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-2 sm:space-y-3 md:space-y-4">
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skillIndex}>
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm font-medium text-gray-700">
+                      <span className="text-xs sm:text-sm font-medium text-gray-700">
                         {skill.name}
                       </span>
-                      <span className="text-sm text-gray-500">
+                      <span className="text-xs sm:text-sm text-gray-500">
                         {skill.level}%
                       </span>
                     </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2">
+                    <div className="w-full bg-gray-200 rounded-full h-1.5 sm:h-2">
                       <motion.div
                         initial={{ width: 0 }}
                         animate={inView ? { width: `${skill.level}%` } : {}}
                         transition={{ duration: 1, delay: index * 0.1 + skillIndex * 0.1 }}
-                        className="h-2 rounded-full"
+                        className="h-1.5 sm:h-2 rounded-full"
                         style={{ backgroundColor: category.color }}
                       />
                     </div>
-                    <p className="text-xs text-gray-500 mt-1">
+                    <p className="text-xs text-gray-500 mt-1 hidden sm:block">
                       {skill.description}
                     </p>
                   </div>
@@ -289,7 +289,7 @@ const Skills = () => {
             Competências Profissionais
           </h3>
 
-          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-2 gap-2 sm:gap-3 md:gap-4 lg:gap-6">
             {skillCategories.slice(9).map((category, index) => (
               <motion.div
                 key={category.title}
@@ -351,7 +351,7 @@ const Skills = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4 lg:gap-6">
               {[
                 {
                   name: 'Comunicação',
