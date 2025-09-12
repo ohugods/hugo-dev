@@ -180,8 +180,10 @@ const About = () => {
                   {/* Text Content */}
                     <div className="order-2 lg:order-1">
                       <h2 className="text-base xs:text-lg sm:text-2xl md:text-4xl lg:text-5xl font-bold text-black mb-3 sm:mb-4 md:mb-6 leading-tight">
-                        <span className="whitespace-nowrap inline-block">Desenvolvedor Full-Stack</span>
-                        <span className="block xs:inline-block xs:ml-2 sm:ml-4 mt-1 xs:mt-0 text-sm xs:text-base sm:text-xl md:text-3xl lg:text-4xl font-medium text-gray-600 whitespace-nowrap">
+                        <span className="whitespace-nowrap inline-block">
+                          <span className="hidden sm:inline">Desenvolvedor </span>Full-Stack
+                        </span>
+                        <span className="block xs:inline-block xs:ml-2 sm:ml-4 mt-1 xs:mt-0 text-sm xs:text-base sm:text-xl md:text-2xl lg:text-3xl font-medium text-gray-600 whitespace-nowrap">
                           Transformando Ideias em Realidade
                         </span>
                       </h2>
