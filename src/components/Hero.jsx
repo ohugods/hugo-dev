@@ -186,7 +186,7 @@ const Hero = () => {
           {/* Name */}
           <ScrollReveal direction="up" delay={0.2}>
             <motion.h1
-              className="text-4xl sm:text-6xl lg:text-7xl font-bold text-black"
+              className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black leading-tight"
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 300 }}
             >

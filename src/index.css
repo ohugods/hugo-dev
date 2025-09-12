@@ -116,6 +116,79 @@
       padding-right: 2rem;
     }
   }
+
+  /* Melhor responsividade para mobile */
+  @media (max-width: 640px) {
+    .container-max {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
+
+    .section-padding {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    /* Ajusta títulos grandes para mobile */
+    h1 {
+      font-size: 2.5rem !important;
+      line-height: 1.1;
+    }
+
+    h2 {
+      font-size: 1.75rem !important;
+      line-height: 1.2;
+    }
+
+    /* Melhora espaçamento de elementos */
+    .space-y-6 > * + * {
+      margin-top: 1rem;
+    }
+
+    .space-y-8 > * + * {
+      margin-top: 1.5rem;
+    }
+
+    /* Ajusta botões para mobile */
+    button {
+      min-height: 44px; /* Apple touch target */
+      padding: 0.75rem 1.5rem;
+    }
+
+    /* Melhora grids para mobile */
+    .grid-cols-2 {
+      gap: 0.75rem;
+    }
+
+    .grid-cols-3 {
+      gap: 0.5rem;
+    }
+
+    /* Ajusta cards para mobile */
+    .rounded-lg {
+      border-radius: 0.5rem;
+    }
+
+    /* Melhora texto em mobile */
+    p {
+      line-height: 1.6;
+    }
+
+    /* Ajusta inputs e forms */
+    input, textarea, select {
+      min-height: 44px;
+      padding: 0.75rem;
+      border-radius: 0.375rem;
+    }
+  }
+
+  /* Tablets */
+  @media (min-width: 641px) and (max-width: 1023px) {
+    .container-max {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+  }
 }
 
 @layer components {

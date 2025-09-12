@@ -162,7 +162,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-black p-2"
+              className="text-black p-3 hover:bg-gray-100 rounded-lg transition-colors"
             >
               <svg
                 className="w-6 h-6"
@@ -198,7 +198,7 @@ const Navigation = () => {
             exit={{ opacity: 0, y: -20 }}
             className="md:hidden bg-white border-t border-gray-200"
           >
-            <div className="px-2 pt-2 pb-3 space-y-1">
+            <div className="px-4 pt-3 pb-4 space-y-2">
               {/* Mobile CTA Button */}
               <div className="pt-2 border-t border-gray-200">
                 <button
@@ -215,7 +215,7 @@ const Navigation = () => {
                     }
                     setIsMobileMenuOpen(false)
                   }}
-                  className="block w-full bg-black text-white px-4 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors duration-200"
+                  className="block w-full bg-black text-white px-6 py-4 rounded-lg font-medium hover:bg-gray-800 transition-colors duration-200 text-lg"
                 >
                   Vamos Conversar
                 </button>

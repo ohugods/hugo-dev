@@ -176,12 +176,12 @@ const About = () => {
                   transition={{ duration: 0.8 }}
                   className="relative"
                 >
-                  <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                  <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 lg:mb-16">
                   {/* Text Content */}
                     <div className="order-2 lg:order-1">
-                      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 leading-tight">
+                      <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4 sm:mb-6 leading-tight">
                         <span className="whitespace-nowrap inline-block">Desenvolvedor Full-Stack</span>
-                        <span className="ml-4 text-2xl md:text-3xl lg:text-4xl font-medium text-gray-600 whitespace-nowrap inline-block">
+                        <span className="block xs:inline-block xs:ml-4 mt-1 xs:mt-0 text-xl xs:text-2xl sm:text-3xl md:text-4xl font-medium text-gray-600 whitespace-nowrap">
                           Transformando Ideias em Realidade
                         </span>
                       </h2>
@@ -247,7 +247,7 @@ const About = () => {
                             x: { duration: 3, repeat: Infinity, ease: "easeInOut" },
                             y: { duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }
                           }}
-                          className="absolute top-2 left-2 z-20"
+                          className="absolute top-2 left-2 z-20 hidden sm:block"
                         >
                           <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center shadow-lg">
                             <SiReact className="text-xs text-black" />
@@ -268,7 +268,7 @@ const About = () => {
                             x: { duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.3 },
                             y: { duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 0.8 }
                           }}
-                          className="absolute top-3 right-3 z-20"
+                          className="absolute top-3 right-3 z-20 hidden sm:block"
                         >
                           <div className="w-7 h-7 bg-gray-300 rounded-full flex items-center justify-center shadow-lg">
                             <SiJavascript className="text-xs text-black" />
@@ -289,7 +289,7 @@ const About = () => {
                             x: { duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.6 },
                             y: { duration: 3.8, repeat: Infinity, ease: "easeInOut", delay: 1.2 }
                           }}
-                          className="absolute top-1/2 left-1 transform -translate-y-1/2 z-20"
+                          className="absolute top-1/2 left-1 transform -translate-y-1/2 z-20 hidden sm:block"
                         >
                           <div className="w-8 h-8 bg-gray-400 rounded-full flex items-center justify-center shadow-lg">
                             <SiNodedotjs className="text-xs text-white" />
@@ -310,7 +310,7 @@ const About = () => {
                             x: { duration: 3.2, repeat: Infinity, ease: "easeInOut", delay: 0.9 },
                             y: { duration: 4.2, repeat: Infinity, ease: "easeInOut", delay: 1.5 }
                           }}
-                          className="absolute bottom-3 right-2 z-20"
+                          className="absolute bottom-3 right-2 z-20 hidden sm:block"
                         >
                           <div className="w-6 h-6 bg-gray-500 rounded-full flex items-center justify-center shadow-lg">
                             <SiPython className="text-xs text-white" />
