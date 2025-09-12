@@ -351,7 +351,7 @@ const Skills = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4 lg:gap-6">
+            <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4 lg:gap-6">
               {[
                 {
                   name: 'Comunicação',
@@ -433,7 +433,7 @@ const Skills = () => {
                     <h4 className="text-xs sm:text-sm font-bold text-black mb-3 whitespace-nowrap">
                       {skill.name}
                     </h4>
-                    <p className="text-xs text-gray-600 leading-tight">
+                    <p className="text-xs text-gray-600 leading-tight hidden sm:block">
                       {skill.description}
                     </p>
                   </div>
