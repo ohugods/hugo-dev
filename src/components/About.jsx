@@ -400,7 +400,7 @@ const About = () => {
                     </p>
                 </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                  <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
                     {/* Value 1 */}
                     <motion.div
                       initial={{ opacity: 0, x: -30 }}
@@ -522,7 +522,7 @@ const About = () => {
                     {/* Timeline line */}
                     <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-black via-gray-600 to-gray-400"></div>
 
-                    <div className="space-y-12">
+                    <div className="space-y-8 sm:space-y-12">
                       {/* 2021 - First Contact with Technology */}
                       <motion.div
                         initial={{ opacity: 0, x: -50 }}
@@ -764,7 +764,7 @@ const About = () => {
                     <div className="w-24 h-1 bg-gradient-to-r from-black to-gray-600 mx-auto"></div>
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6">
+                  <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-3 sm:gap-4 lg:gap-6">
                     {/* React Developer */}
                     <motion.div
                       whileHover={{ scale: 1.02, y: -2 }}
@@ -917,7 +917,7 @@ const About = () => {
                 </p>
                   </div>
 
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+              <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12">
                 {services.map((service, index) => (
                   <motion.div
                   key={service.title}

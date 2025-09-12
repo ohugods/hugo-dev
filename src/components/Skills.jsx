@@ -224,7 +224,7 @@ const Skills = () => {
         </motion.div>
 
         {/* Original Technical Skills Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12">
+        <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 mb-6 sm:mb-8 md:mb-12">
           {skillCategories.slice(0, 9).map((category, index) => (
             <motion.div
               key={category.title}
@@ -289,7 +289,7 @@ const Skills = () => {
             Competências Profissionais
           </h3>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
             {skillCategories.slice(9).map((category, index) => (
               <motion.div
                 key={category.title}
@@ -351,7 +351,7 @@ const Skills = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
               {[
                 {
                   name: 'Comunicação',

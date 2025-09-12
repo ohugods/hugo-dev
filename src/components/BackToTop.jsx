@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FaArrowUp } from 'react-icons/fa'
+import { FaWhatsapp } from 'react-icons/fa'
 
 const BackToTop = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -19,11 +19,11 @@ const BackToTop = () => {
     return () => window.removeEventListener('scroll', toggleVisibility)
   }, [])
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    })
+  const openWhatsApp = () => {
+    const phoneNumber = '5511999999999' // Substitua pelo seu número
+    const message = 'Olá! Vi seu portfólio e gostaria de conversar sobre um projeto.'
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
+    window.open(url, '_blank')
   }
 
   return (
@@ -35,11 +35,11 @@ const BackToTop = () => {
           exit={{ opacity: 0, scale: 0 }}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-[9999] w-12 h-12 bg-black text-white rounded-full shadow-2xl hover:bg-gray-800 transition-all duration-300 flex items-center justify-center border-2 border-white hover:border-gray-200"
-          aria-label="Voltar ao topo"
+          onClick={openWhatsApp}
+          className="fixed bottom-8 right-8 z-[9999] w-14 h-14 bg-green-500 text-white rounded-full shadow-2xl hover:bg-green-600 transition-all duration-300 flex items-center justify-center border-2 border-white hover:border-green-200"
+          aria-label="Conversar no WhatsApp"
         >
-          <FaArrowUp className="w-5 h-5" />
+          <FaWhatsapp className="w-7 h-7" />
         </motion.button>
       )}
     </AnimatePresence>
