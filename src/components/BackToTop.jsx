@@ -20,7 +20,7 @@ const BackToTop = () => {
   }, [])
 
   const openWhatsApp = () => {
-    const phoneNumber = '5511999999999' // Substitua pelo seu número
+    const phoneNumber = '5527995083280' // Número do Hugo
     const message = 'Olá! Vi seu portfólio e gostaria de conversar sobre um projeto.'
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
     window.open(url, '_blank')
@@ -39,7 +39,7 @@ const BackToTop = () => {
           className="fixed bottom-8 right-8 z-[9999] w-14 h-14 bg-green-500 text-white rounded-full shadow-2xl hover:bg-green-600 transition-all duration-300 flex items-center justify-center border-2 border-white hover:border-green-200"
           aria-label="Conversar no WhatsApp"
         >
-          <FaWhatsapp className="w-7 h-7" />
+          <FaWhatsapp className="w-8 h-8" />
         </motion.button>
       )}
     </AnimatePresence>
