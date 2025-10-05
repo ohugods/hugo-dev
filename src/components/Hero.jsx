@@ -254,7 +254,14 @@ const Hero = () => {
                   boxShadow: "0 10px 25px rgba(0,0,0,0.1)"
                 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={() => document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => {
+                  if (window.activateTab) {
+                    document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' })
+                    setTimeout(() => window.activateTab('contact'), 300)
+                  } else {
+                    document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })
+                  }
+                }}
                 onMouseEnter={() => setIsHoveringButton(true)}
                 onMouseLeave={() => setIsHoveringButton(false)}
                 className="px-8 py-3 border-2 border-black text-black rounded-lg font-medium hover:bg-black hover:text-white transition-all duration-200 relative overflow-hidden group"
@@ -266,22 +273,9 @@ const Hero = () => {
                   whileHover={{ x: '0%' }}
                   transition={{ duration: 0.3 }}
                 />
-                <button
-                  onClick={() => {
-                    if (window.activateTab) {
-                      document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' })
-                      setTimeout(() => window.activateTab('contact'), 300)
-                    } else {
-                      document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })
-                    }
-                  }}
-                  onMouseEnter={() => setIsHoveringButton(true)}
-                  onMouseLeave={() => setIsHoveringButton(false)}
-                  className="relative z-10 group-hover:text-white hover:underline transition-all duration-300"
-                  style={{ cursor: 'none' }}
-                >
+                <span className="relative z-10 group-hover:text-white hover:underline transition-all duration-300">
                   Entre em Contato
-                </button>
+                </span>
               </motion.button>
             </motion.div>
           </ScrollReveal>
