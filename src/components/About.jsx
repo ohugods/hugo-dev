@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FaFacebookF, FaCode, FaDesktop, FaGithub, FaUser, FaTachometerAlt, FaCogs } from 'react-icons/fa'
-import { SiSolana, SiJavascript, SiPython, SiReact, SiNodedotjs } from 'react-icons/si'
+import { FaCode, FaDesktop, FaGithub, FaUser, FaTachometerAlt, FaCogs } from 'react-icons/fa'
+import { SiJavascript, SiPython, SiReact, SiNodedotjs } from 'react-icons/si'
 import Skills from './Skills'
 import Projects from './Projects'
 import Contact from './Contact'
@@ -767,30 +767,6 @@ const About = () => {
                   </div>
 
                   <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-3 sm:gap-4 lg:gap-6">
-                    {/* React Developer */}
-                    <motion.div
-                      whileHover={{ scale: 1.02, y: -2 }}
-                      className="group relative bg-white rounded-2xl shadow-sm p-4 sm:p-6 border border-gray-200 hover:shadow-md transition-all duration-300"
-                    >
-                      <div className="flex items-center space-x-3 sm:space-x-4">
-                        <motion.div
-                          className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-gray-800 to-black rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow duration-300"
-                        >
-                          <FaFacebookF className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
-                        </motion.div>
-                        <div className="flex-1">
-                          <h4 className="font-bold text-black text-lg mb-1">React Developer</h4>
-                          <p className="text-gray-600 text-sm mb-2">Meta/Facebook</p>
-                          <div className="flex items-center space-x-2">
-                            <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                            <span className="text-green-600 text-sm font-medium">Certificado</span>
-                            <svg className="w-3 h-3 text-gray-400 group-hover:text-gray-600 transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </motion.div>
 
                     {/* JavaScript Algorithms */}
                     <motion.div
@@ -841,30 +817,6 @@ const About = () => {
               </div>
             </motion.div>
 
-                    {/* Solana Developer */}
-                    <motion.div
-                      whileHover={{ scale: 1.02, y: -2 }}
-                      className="group relative bg-white rounded-2xl shadow-sm p-4 sm:p-6 border border-gray-200 hover:shadow-md transition-all duration-300"
-                    >
-                      <div className="flex items-center space-x-3 sm:space-x-4">
-                        <motion.div
-                          className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-gray-900 to-black rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow duration-300"
-                        >
-                          <SiSolana className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
-                        </motion.div>
-                        <div className="flex-1">
-                          <h4 className="font-bold text-black text-lg mb-1">Solana Developer</h4>
-                          <p className="text-gray-600 text-sm mb-2">Solana Labs</p>
-                          <div className="flex items-center space-x-2">
-                            <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                            <span className="text-green-600 text-sm font-medium">Certificado</span>
-                            <svg className="w-3 h-3 text-gray-400 group-hover:text-gray-600 transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </motion.div>
 
                     {/* Career Essentials in GitHub Professional Certificate */}
                     <motion.div
