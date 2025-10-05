@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { Analytics } from '@vercel/analytics/react'
 import Hero from './components/Hero'
 import About from './components/About'
 import Navigation from './components/Navigation'
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Footer />
       <BackToTop />
+      <Analytics />
     </div>
   )
 }
